@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Eczar|VT323" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=MedievalSharp|UnifrakturCook:700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="normalize.css">-->
+
+
+
+    <title>Marc Cook | Developer</title>
+</head>
+
+
+
+<body>
+
+   
+   <div id="disclaimer-message">
+       <p> This is only a visual concept of a shopping cart from one of my favorite games. It is not meant to responsive or functional, just a class project I wanted to make a little different. Thanks for checking it out!</p>
+       
+   </div>
+    
+    
+    
+<!--        INVENTORY BOX-->
+    <section id="box">
+        
+        <h1>INVENTORY</h1>
+
+<!--
+        <input id="itemName" type="text" placeholder="Item">
+        <input id="itemPrice" type="text" placeholder="Price">
+-->
+<!--        <button type="button" onclick="addToList()">Add item</button>-->
+
+    </section>
+
+
+    
+    
+    <!--THIS CONTAINER WILL HOLD ALL OF MY ITEMS        -->
+        <table id="item-container">
+           <!--THIS CONTAIN STLYING THAT GIVE THE BLUR EFFECT ON INVENTORY BOX-->
+
+           <div id="gaussian-blur">
+    
+    </div>    
+    
+     <div id="inventory-blur">
+    </div>
+           
+           
+            <tr class="item-list">
+                 <h1 class="shop-inventory">SHOP INVENTORY</h1>
+                
+                  <td class="item" >
+                   <div id="price"></div>
+                    <img src="imgs/200px-BladeofWoe.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-CultistRobes.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-DaedricSwordoftheVampire.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/Elvenmace.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-Dwarven_Armor.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                 <td class="item">
+                    <img src="imgs/Ebony_Sword.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-EbonyBoots.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-DaedricBoots.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-SteelPlateBoots.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-DwarvenHelmet_male.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                 <td class="item">
+                    <img src="imgs/200px-ElvenSword.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-GlassArmor_female.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-NightingaleBow.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-NordicCarvedHelmet.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-PotionofPlentifulHealing.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                 <td class="item">
+                    <img src="imgs/200px-PotionofVigorousHealing.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/200px-WolfArmor.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/PotionofMinorHealing.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/Dragonbone_Sword.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                <td class="item">
+                    <img src="imgs/elven-helm200px.png">
+                    <button type="button" onclick="buyItem()">Buy Item</button>
+                </td>
+                
+            </tr>
+        
+        
+        </table>        
+    
+<!--    THIS BOX CONTAINS ALL THE FOOTER INFO. HEALH, GOLD DAMAGE GA-->
+    
+    <section id="stat-box">
+
+        <ul id="stat-list">
+            <div class="equip">
+                <p>Equip</p>
+            </div>
+            <div class="drop">
+                <p>Drop</p>
+            </div>
+            <div class="charge">Charge</div>
+            <div class="damage">
+                <p>Damage</p>
+            </div>
+            <div class="carry-weight">
+                <p>Carry weight</p>
+            </div>
+            <div class="gold">
+                <b>Gold</b>
+            </div>
+            <div class="power-bar">
+                <p>Health</p>
+            </div>
+
+        </ul>
+
+
+        
+
+        
+
+        
+
+    </section>
+
+
+    <!--- 
+
+MY SCRIPT
+
+ALWAYS KEEP SCRIPT TAG BELOW WHAT YOU TRYING TO RUN
+
+-->
+
+
+    <!--        <script src="js/comparescript.js" type="text/javascript"></script>-->
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

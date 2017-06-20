@@ -1,0 +1,306 @@
+/*
+
+
+IN ORDER TO STRETCH FULL LENGTH YOU MUST SET GLOBAL MARGIN AND PADDING TO 0PX
+
+
+
+
+*/
+/*
+@font-face{
+    font-family:poop;
+    src:url(../fonts/cardinal.ttf);
+}
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    position: relative;
+    width:100%;
+    height:974px;
+}
+body {
+    background-image: url(../imgs/skyrimShop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+/*    background-size: 100% 960px*/
+ 
+}
+
+
+/*SHOPPING CART CONTAINER STYLE*/
+
+section {
+    position: relative;
+    width: 500px;
+    min-height:900px;
+    left:22%;
+    top:0px;
+    border: 2px solid #4b330d;
+    border-radius: 5px;
+    box-shadow: 6px 10px 49px 7px black;
+    background-color: black;
+    opacity: .9;
+}
+
+
+/*SHOPPING CART ITEM STYLE*/
+
+div {
+    position: relative;
+    font-size: .9em;
+    text-align: left;
+    float: left;
+    left: 0%;
+    width: 70%;
+    height: auto;
+    color: white;
+    padding: 5px;
+}
+
+
+/*SHOPPING CART STYLE*/
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: silver;
+    left:25%;
+    font-family: 'UnifrakturCook', cursive;
+    width:50%;
+    
+}
+
+#box {
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em;
+    min-height: 525px;
+    width: 500px;
+   top: 115px;
+    left: 1%;
+    font-family: 'VT323', monospace;
+    z-index: 1;    
+}
+
+#gaussian-blur {
+    position: absolute;
+    width: 26%;
+    min-height: 523px;
+    left: 1%;
+    top: 115px;
+    border-radius: 5px;
+    filter: blur(5px);
+    opacity: .9;
+    background-image: url(../imgs/Ragged_Flagon_Shop_Sign.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0
+}
+
+/*STAT BOX STYLE*/
+
+#stat-box {
+    position: fixed;
+    float: left;
+    border: 2px solid transparent;
+    border-radius: 0px;
+    top:940px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+}
+
+#stat-list {
+    position: fixed;
+    display: flex;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    top: 943px;
+}
+
+
+/*STAT STYLE*/
+
+.equip {
+    position: relative;
+    left: 3.5%;
+    text-align: center;
+    width: 3%;
+}
+
+.drop {
+    position: relative;
+    left: 6%;
+    text-align: center;
+    width: 2%;
+}
+
+.charge {
+    position: relative;
+    left: 10%;
+    text-align: center;
+    width: 5%;
+}
+
+.damage {
+    position: relative;
+    left: 25%;
+    width: 5%;
+    text-align: center;
+}
+
+.carry-weight {
+    position: relative;
+    left: 40%;
+    text-align: center;
+    width: 5%;
+}
+
+.gold {
+    position: relative;
+    left: 50%;
+    text-align: center;
+    width: 5%;
+}
+
+.power-bar {
+    position: relative;
+    left: 55%;
+    text-align: center;
+    width: 5%;
+}
+
+
+/*TOTAL COST STYLING AND FOOTER*/
+ul {
+    position: fixed;
+    width: 74%;
+    height: auto;
+    border: 2px solid transparent;
+    color: white;
+    left: 30px;
+    display: flex;
+    color: darkgreen;
+    top: 616px;
+}
+
+li {
+    position: relative;
+    font-size: 1em;
+    color: whitesmoke;
+    list-style: none;
+    width: 100px;
+    text-align: center;
+    left: 35%;
+}
+
+b {
+    color:darkgoldenrod;
+}
+
+
+/*ITEM CONTAINER STYLE*/
+#item-container{
+    position: fixed;
+    width:60%;
+    height: 430px;
+    left:35%;
+    bottom:300px;
+    border-radius: 5px;
+    border:2px solid;
+    box-shadow: 6px 10px 49px 7px black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#inventory-blur{
+    position: fixed;
+    border:2px solid transparent;
+    border-radius:5px;
+    width: 59.4%;
+    height: 420px;
+    top:239px;
+    left:670px;
+    background-image: url(../imgs/skyrim-signs.jpg);
+    background-size: cover;
+    filter: blur(2px);
+    opacity: .8;
+}
+.item{
+    position: relative;
+    left:0px;
+    top:100px;
+    width: 10%;
+    display: inline-block;
+    padding-bottom:10px;
+    border-radius: 5px;
+}
+ 
+img{
+    position: relative;
+    width:100px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color:rgb(0, 0, 0);
+
+     
+}
+button{
+    position: relative;
+    left:19px;
+    border-radius:5px;
+    border:2px ridge saddlebrown;
+    background-color:grey;
+    background-image: url(../imgs/Wood-Textures-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: silver;
+    text-align: center;
+    
+    
+    
+}
+
+/*SHOP INVENTORY*/
+
+.shop-inventory{
+    position: fixed;
+    bottom:670px;
+    width:350px;
+    left:56%;
+font-family: 'UnifrakturCook', cursive;
+ 
+}
+
+h2 p{
+    color:silver;
+    font-size:.7em;
+    text-align: center;
+    font-family: 'UnifrakturCook', cursive;
+}
+
+
+/*DISCLAIMER MESSAGE*/
+#disclaimer-message {
+    position: absolute;
+    width: 370px;
+    min-height: auto;
+    border: 1px ridge black;
+    border-radius: 10px;
+    box-shadow: 0 4px 48px 3px black;
+    background-color: darkolivegreen;
+    left: 880px;
+    top: 730px;
+    color: silver;
+    font-size: 20px;
+    padding: 10px;
+}
